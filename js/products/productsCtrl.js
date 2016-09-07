@@ -1,12 +1,11 @@
-angular.module('miniRouting').controller('productsCtrl', function($scope, productsService, $stateParams) {
+angular.module('miniRouting').controller('productsCtrl', function($scope, productsService, $state) {
 
 
-  if ($stateParams.id === 'shoes') {
+  if ($state.params.id === 'shoes') {
     $scope.productData = productsService.shoeData;
-  } else if ($stateParams.id === 'socks') {
+  } else if ($state.params.id === 'socks') {
     $scope.productData = productsService.sockData;
   }
-
 
 
 

@@ -1,4 +1,4 @@
-angular.module('miniRouting').controller('settingsCtrl', function($scope) {
+angular.module('miniRouting').controller('settingsCtrl', function() {
 
 
 
